@@ -1,0 +1,52 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 62.5% of the base size of 16px = 10px.*/
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #1b1b32;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato, sans-serif;
+    padding-top: 1.5rem;
+}
+
+.freeCodeCamp-logo-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.freeCodeCamp-logo {
+    height: 5rem;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55rem;
+    min-width: 60rem;
+    flex-wrap: wrap;
+}
