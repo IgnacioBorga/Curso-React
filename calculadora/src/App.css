@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 62.5% of the base size of 16px = 10px.*/
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #1b1b32;
+}
+.App {
+    /*vh: viewport height (altura del dispositivo). También funciona como porcentaje,
+     especificar 10vh es equivalente a ocupar 10% de la altura visible de la pantalla */
+    height: 100vh;
+    padding-top: 1rem;
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.freeCodeCamp-logo-contenedor {
+    height: 5rem;
+    width: 100%;
+    margin: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freeCodeCamp-logo {
+    height: 4rem;
+}
+
+.contenedor-calculadora {
+    width: 40rem;
+    height: 60rem;
+    padding: 1.4rem;
+    background-color: #99c9e5;
+    border-radius: 2rem;
+    border: 1rem solid white;
+}
+
+.fila {
+    display: flex;
+    margin: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
